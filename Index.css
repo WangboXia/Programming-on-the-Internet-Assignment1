@@ -6,151 +6,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
-.header {
-    padding: 5px;
-    text-align: center;
-    background: #0d1dfa;
-    color: white;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-    font-size: 40px;
-}
-
-h2 {
+h1 {
     text-align: center;
 }
 
-/**************** Responsive Mega Menu Start ****************************/
-.navbar {
-    overflow: hidden;
-    background-color: #989494;
-    font-family: verdana, Helvetica, sans-serif;
-}
-
-.navbar a {
-     float: left;
-     font-size: 16px;
-     color: white;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 10px 12px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 50%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content .header {
-    background: red;
-    padding: 16px;
-    color: white;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Create three equal column that floats next to each other */
-.mega-column {
-    float: left;
-    width: 33.33%;
-    padding: 9px;
-    background-color: #ccc;
-    height: 200px;
-}
-
-.mega-column a {
-    float: none;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.mega-column a:hover {
-    background-color: #42D334;
-}
-
-/* Clear floats after the columns*/
-.mega-row:after{
+.new-row:after{
     content: "";
     display: table;
     clear: both;
 }
 
-/*
-    Responsive layout - makes the three columns stack on top of each
-    other instead of next to each other.
-*/
-@media screen and (max-width: 600px){
-    .mega-column{
-        width: 100%;
-        height: auto;
-    }
-    .row {
-        flex-direction: column-reverse;
-      }
-    .col-25 {
-        margin-bottom: 20px;
-     }
-}
-/**************** Responsive Mega Menu End ****************************/
-
-/* Column container */
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar / left column */
-.side {
-    flex: 50%;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-/* Main column */
-.main {
-    flex: 50%;
-    background-color: white;
-    padding: 20px;
-}
-
-/* Add Button*/
 .add-button {
     position: absolute;
     bottom: 25px;
@@ -188,7 +53,7 @@ h2 {
   }
 
   .col-25 {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%; 
     flex: 25%;
   }
 
@@ -201,9 +66,6 @@ h2 {
 .price {
     float: right;
     color: grey;
-}
-.container a{
-   color: #2196F3;
 }
 
 /**************** table bottom-right Start ****************************/

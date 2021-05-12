@@ -1,0 +1,138 @@
+* {
+    margin: 500;
+    padding:0;
+    color: black;
+}
+  
+ul,ol,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.nav {
+    margin: 50px 0 0 50px;
+    float: left;
+}
+ul li {
+    float: left;
+    border-right: 1px solid #222;
+}
+ul li a {
+    display: block;
+    width: 160px;
+    height: auto;
+    background: #095E8F;
+    line-height: 55px;
+    text-align: center;
+}
+.nav li a:hover {
+    background: #DBC62A;
+    opacity: .8;
+}
+
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: 101px;
+
+}
+.nav li:hover .nav2 {
+    display: block;
+}
+
+.nav .nav3{
+    position: absolute;
+    display: none;
+    width: 101px;
+    left: 161px;
+    margin-top: -60px;
+}
+
+.nav2 li:hover .nav3{
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9;
+}
+
+#checkout {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 15%; 
+    left: 20%;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    z-index: 11;
+}
+
+.checkoutTable table th td{
+     border: 1px solid black;
+}
+
+h2{
+    margin-top:5%;
+    margin-bottom: 3%;
+    margin-left:10px;
+}
+ #checkoutTable{
+    margin-left:10px;
+   
+}
+button{
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 20px; 
+    background-color:#DBC62A; 
+    float:left;
+    margin-right: 5px;
+    margin-left:10px;
+}
+
+@media screen and (max-width: 600px){
+    .more {
+        width: 100%;
+        height: auto;
+    }
+    .row {
+        flex-direction: column-reverse;
+      }
+    .col-25 {
+        margin-bottom: 20px;
+     }
+}
+/**************** Responsive Mega Menu End ****************************/
+
+
+/* Column container */
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.side {
+    flex: 50%;
+    background-color: #e35656;
+    padding: 30px;
+}
+
+/* Main column */
+.main {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
